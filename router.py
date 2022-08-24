@@ -5,7 +5,7 @@ suanpan_path = "C:/Users/wudai.xhw/AppData/Local/xuelang/suanpan-desktop"
 db_dir = os.path.join(suanpan_path,"data",'db')
 
 
-def getUsers():
+def getUsers(db_dir):
     '''
     查找所有用户信息
     return：所有用户信息的list
@@ -17,3 +17,4 @@ def getUsers():
         if os.path.isdir(now_file):
             users.append(path)
     return users
+
